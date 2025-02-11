@@ -18,6 +18,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
+p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -32,9 +38,12 @@ a {
 header {
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
+header img {
+    max-height: 80px;
+}
 /********** STYLE NAVIGATION *********/
 
 header nav ul {
@@ -60,6 +69,7 @@ header nav a.actif {
 header nav a:hover {
     border-bottom: 3px solid #151515;
     background-color: #eeeeee;
+    color: #666666;
 }
 
 /********** STYLE CONTENU PRINCIPAL *********/
@@ -67,6 +77,34 @@ main {
     padding: 1rem;
     max-width: 960px;
     margin: 0 auto;
+}
+
+/* Flex box */
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.produits li figure figcaption h2 {
+    color: #ff8800;
+}
+
+.produits li {
+    border: 2px solid #151515;
+    flex-basis: calc(50% - 40px);
+    margin: 20px;
+}
+/* FOOTER */
+footer {
+    background: #151515;
+    margin-top: 2rem;
+    padding: 20px 40px;
+    color: #fff;
+    text-align: center;
+    transform: uppercase;
 }
 
 /********** PAGE NOS PRODUITS *********/
