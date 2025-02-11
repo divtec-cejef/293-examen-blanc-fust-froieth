@@ -69,9 +69,11 @@ header nav a.actif {
 header nav a:hover {
     border-bottom: 3px solid #151515;
     background-color: #eeeeee;
-    color: #666666;
 }
 
+a:hover {
+    color: #666666;
+}
 /********** STYLE CONTENU PRINCIPAL *********/
 main {
     padding: 1rem;
@@ -104,9 +106,8 @@ footer {
     padding: 20px 40px;
     color: #fff;
     text-align: center;
-    transform: uppercase;
+    text-transform: uppercase;
 }
-
 /********** PAGE NOS PRODUITS *********/
 .produits {
     list-style-type: none;
