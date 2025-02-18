@@ -81,24 +81,6 @@ main {
     margin: 0 auto;
 }
 
-/* Flex box */
-.produits {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.produits li figure figcaption h2 {
-    color: #ff8800;
-}
-
-.produits li {
-    border: 2px solid #151515;
-    flex-basis: calc(50% - 40px);
-    margin: 20px;
-}
 /* FOOTER */
 footer {
     background: #151515;
@@ -109,7 +91,11 @@ footer {
     text-transform: uppercase;
 }
 /********** PAGE NOS PRODUITS *********/
+
 .produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
 }
@@ -117,6 +103,9 @@ footer {
 .produits li {
     padding: 2% 1rem;
     transition: all 0.2s ease-in-out;
+    border: 2px solid #151515;
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
 }
 
 .produits li:hover {
@@ -138,4 +127,5 @@ footer {
     text-align: center;
     margin: .5em 0 0;
     line-height: 1.1;
+    color: #ff8800;
 }
